@@ -105,12 +105,6 @@
                     <span class="nav-arrow-next">Next</span>
                 </nav>
 
-                <nav id="nav-dots" class="nav-dots">
-                    <span class="nav-dot-current"></span>
-                    <span></span>
-                    <span></span>
-                </nav>
-
             </div><!-- /slider-wrapper -->
         </section>
         <!--/#home section-->
@@ -1141,7 +1135,14 @@
                         </div>
                         <!-- /section title -->
 
-                        <iframe src="https://threatmap.fortiguard.com/" style="border: none;" width="100%" height="400px"></iframe>
+                        <!-- Fortinet Map -->
+                        <div id="fortinet-map-request-div" class="text-center">
+                            <h2 class="color-red">Worldwide Hackers Activity</h2>
+                            <a onclick="showFortinetMap()" class="btn btn-red"><i class="fa fa-bug"></i> Watch Real Time Hacker Attacks</a>
+                        </div>
+
+                        <div id="fortinet-map-holder-div"></div>
+                        <!-- /Fortinet Map -->
 
                         <!-- testimonial wrapper -->
                         <div id="why-carousel" class="wow fadeInUp" data-wow-duration="500ms" data-wow-delay="100ms" style="margin-top: 50px;">
@@ -1241,64 +1242,20 @@
                         <div class="border"></div>
                     </div>
                     <!-- /section title -->
-    
-                    <!-- Contact Form col-md-offset-2 col-md-8 -->
-                    <div class="contact-form col-md-8 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2 class="text-center">Email</h2>
-                        <br>
-                        <form id="contact-form" method="post" action="php/sendmail.php" role="form">
-    
-                            <div class="form-group">
-                                <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
-                            </div>
-
-                            <div class="form-group">
-                                <input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
-                            </div>
-
-                            <div class="form-group">
-                                <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
-                            </div>
-
-                            <div class="form-group">
-                                <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>	
-                            </div>
-
-                            <div id="mail-success" class="success">
-                                Thank you! I will answer as soon as possible! :)
-                            </div>
-
-                            <div id="mail-fail" class="error">
-                                Sorry, some error happened. Try again later :(
-                            </div>
-
-                            <div id="cf-submit">
-                                <input type="submit" id="contact-submit" class="btn btn-blue" value="Submit">
-                            </div>						
-
-                        </form>
-                    </div>
-                    <!-- ./End Contact Form -->
 
                     <!-- Social Links -->
-                    <div class="social-icon col-md-4 top wow fadeInUp">
-                        <h2 class="text-center" style="margin-right: 20px;">Social Media</h2>
-                        <br>
+                    <div class="social-icon col-md-12 top wow fadeInUp">
                         <ul>
+                            <li><a href="mailto:gustavocelani36@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>Email</li>
                             <li><a href="https://www.linkedin.com/in/gustavocelani/" target="_blank"><i class="fa fa-linkedin"></i></a>LinkedIn</li>
                             <li><a href="https://github.com/gustavocelani" target="_blank"><i class="fa fa-github"></i></a>GitHub</li>
-                            
-                        </ul>
-                        <br>
-                        <ul>
                             <li><a href="https://www.instagram.com/gustavo_celani/" target="_blank"><i class="fa fa-instagram"></i></a>Intagram</li>
-                            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a>Facebook</li>
-                        </ul>
-                        <br>
-                        <ul>
+                            <li><a href="https://www.facebook.com/gustavo.celani/" target="_blank"><i class="fa fa-facebook"></i></a>Facebook</li>
                             <li><a href="#home" target="_blank"><i class="fa fa-desktop"></i></a>Website</li>
                             <li><a href="https://open.spotify.com/artist/2GfX6oVyDxe4U6mCLKhG1P?si=3pAlX6YmTkuUNyS2aOM9Yw&nd=1" target="_blank"><i class="fa fa-spotify"></i></a>Spotify</li>
                         </ul>
+                        <br>
+                        <br>
                     </div>
                     <!--/. End Social Links -->
 

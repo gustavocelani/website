@@ -101,6 +101,16 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 }
 
+.btn-red {
+    background-color: #ff4646;
+}
+
+.btn-red:focus, 
+.btn-red:hover {
+    background-color: #2F383D;
+	color: #fff;
+}
+
 .btn-transparent {
 	border: 1px solid #4e595f;
 }
@@ -199,6 +209,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .color {
     color: #61a6ff;
+}
+
+.color-red {
+    color: #ff4646;
 }
 
 .sub-title {
