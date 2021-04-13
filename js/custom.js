@@ -331,11 +331,20 @@ function updateLanguage(language) {
 	}
 
 	$.ajax({ 
-		url: '../language/' + language + '.json', 
+		url: '/language/' + language + '.json',
 		dataType: 'json',
-		async: false, 
-		success: function (languageJson) { populateStringsWithLanguageJson(languageJson); },
-		error: function () { console.warn(language + ' not supported, using default language \'en\''); updateLanguage('en'); }
+		async: false,
+		success: function (languageJson) {
+			populateStringsWithLanguageJson(languageJson);
+		},
+		error: function () {
+			if (language != 'en') {
+				console.warn(language + ' not supported, using default language \'en\'');
+				updateLanguage('en');
+			} else {
+				window.alert('Languagae Fatal Error!');
+			}
+		}
 	});
 }
 
