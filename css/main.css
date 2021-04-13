@@ -336,7 +336,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #61a6ff;
 }
 
-
 /*=================================================================
 	Academic section
 ==================================================================*/
@@ -1150,14 +1149,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .social-icon > ul > li > a > i {
-    color: #55606a;
+    color: #61a6ff;
     display: inline-block;
     font-size: 32px;
     line-height: 70px;
     margin: 0;
 
-    opacity: 0.3;
-    filter: alpha(opacity=30);
+    opacity: 1;
+    filter: alpha(opacity=100);
 
 	-webkit-transform: rotateY(180deg);
 	   -moz-transform: rotateY(180deg);
