@@ -331,7 +331,7 @@ function updateLanguage(language) {
 	}
 
 	$.ajax({ 
-		url: '/language/' + language + '.json',
+		url: '/website/language/' + language + '.json',
 		dataType: 'json',
 		async: false,
 		success: function (languageJson) {
