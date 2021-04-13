@@ -330,7 +330,7 @@ function updateLanguage(language) {
 		return;
 	}
 
-	$.ajax({ 
+	$.ajax({
 		url: '/website/language/' + language + '.json',
 		dataType: 'json',
 		async: false,
@@ -339,10 +339,10 @@ function updateLanguage(language) {
 		},
 		error: function () {
 			if (language != 'en') {
-				console.warn(language + ' not supported, using default language \'en\'');
+				console.warn(language + ' not supported, attempting default language \'en\'');
 				updateLanguage('en');
 			} else {
-				window.alert('Languagae Fatal Error!');
+				console.warn('Language fatal error... using native html language');
 			}
 		}
 	});
@@ -374,7 +374,7 @@ function populateStringsWithLanguageJson(languageJson) {
 	document.getElementById("nav_language").innerHTML = languageJson.nav_language;
 	document.getElementById("nav_language_drop_ptBR").innerHTML = languageJson.nav_language_drop_ptBR;
 	document.getElementById("nav_language_drop_en").innerHTML = languageJson.nav_language_drop_en;
-	document.getElementById("nav_language_drop_es").innerHTML = languageJson.nav_language_drop_es;
+	// document.getElementById("nav_language_drop_es").innerHTML = languageJson.nav_language_drop_es;
 
 	// Section: Academic
 	document.getElementById("academic_title").innerHTML = languageJson.academic_title;
