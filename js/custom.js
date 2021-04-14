@@ -393,7 +393,7 @@ function populateStringsWithLanguageJson(languageJson) {
 	document.getElementById("skills_infosec").innerHTML = languageJson.skills_infosec;
 	document.getElementById("skills_eh").innerHTML = languageJson.skills_eh;
 	document.getElementById("skills_dev").innerHTML = languageJson.skills_dev;
-	document.getElementById("skills_be").innerHTML = languageJson.skills_be;
+	document.getElementById("skills_web").innerHTML = languageJson.skills_web;
 	document.getElementById("skills_crypto").innerHTML = languageJson.skills_crypto;
 	document.getElementById("skills_linux").innerHTML = languageJson.skills_linux;
 	document.getElementById("skills_android").innerHTML = languageJson.skills_android;

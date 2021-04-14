@@ -41,7 +41,7 @@
     "skills_infosec": "<i class=\"fa fa-shield\"></i> Segurança da Informação",
     "skills_eh": "<i class=\"fa fa-bug\"></i> Hacker Ético",
     "skills_dev": "<i class=\"fa fa-desktop\"></i> Desenvolvimento",
-    "skills_be": "<i class=\"fa fa-cloud\"></i> Cloud Back-End",
+    "skills_web": "<i class=\"fa fa-cloud\"></i> WEB",
     "skills_crypto": "<i class=\"fa fa-lock\"></i> Criptografia",
     "skills_linux": "<i class=\"fa fa-terminal\"></i> Linux",
     "skills_android": "<i class=\"fa fa-android\"></i> Android",
