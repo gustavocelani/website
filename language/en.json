@@ -61,7 +61,7 @@
     "counter_cert": "Certificates",
     "counter_pub": "Publications",
     "counter_proj": "Public Projects",
-    "counter_ctf": "Capture the Flag",
+    "counter_ctf": "CTF",
 
     "certificates_title": "Courses and <span class=\"color\">Certificates</span>",
     "certificates_filter_all": "All",

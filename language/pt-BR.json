@@ -61,7 +61,7 @@
     "counter_cert": "Certificados",
     "counter_pub": "Publicações",
     "counter_proj": "Projetos Públicos",
-    "counter_ctf": "Capture the Flag",
+    "counter_ctf": "CTF",
 
     "certificates_title": "Cursos e <span class=\"color\">Certificados</span>",
     "certificates_filter_all": "Todos",
@@ -139,7 +139,7 @@
     "projects_9": "Ambiente de<br>Containers LXD",
     "projects_10": "Sniffer<br>Infravermelho",
     "projects_11": "Servidor HTTP<br>Android",
-    "projects_12": "Mapa de Color<br>da Cidade",
+    "projects_12": "Mapa de Calor<br>da Cidade",
 
     "why_title": "<span class=\"color\">Porque</span> Cyber Segurança?",
     "hacking_map_text": "Atividade Hacker Mundial",
