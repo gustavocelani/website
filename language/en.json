@@ -144,6 +144,7 @@
     "why_title": "<span class=\"color\">Why</span> Cybersecurity?",
     "hacking_map_text": "Worldwide Hackers Activity",
     "hacking_map_button": "<i class=\"fa fa-bug\"></i> Watch Real Time Hacker Attacks",
+    "hacking_map_hide_button": "<i class=\"fa fa-eye-slash\"></i> Hide Map",
     "why_1_title": "\"95% of cybersecurity breaches are caused by human error.\"",
     "why_1_source": "<i class=\"fa fa-eye\"></i><a href=\"https://www.cybintsolutions.com/cyber-security-facts-stats/\" target=\"_blank\" class=\"color\"> Cybint</a>",
     "why_2_title": "\"The worldwide information security market is forecast to reach $170.4 billion in 2022.\"",

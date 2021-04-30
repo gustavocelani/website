@@ -144,6 +144,7 @@
     "why_title": "<span class=\"color\">Porque</span> Cyber Segurança?",
     "hacking_map_text": "Atividade Hacker Mundial",
     "hacking_map_button": "<i class=\"fa fa-bug\"></i> Assista Ataques Hacker em Tempo Real",
+    "hacking_map_hide_button": "<i class=\"fa fa-eye-slash\"></i> Esconder Mapa",
     "why_1_title": "\"95% das brechas de cyber segurança são causadas por falhas humanas.\"",
     "why_1_source": "<i class=\"fa fa-eye\"></i><a href=\"https://www.cybintsolutions.com/cyber-security-facts-stats/\" target=\"_blank\" class=\"color\"> Cybint</a>",
     "why_2_title": "\"O mercado mundial da segurança da informação estima alcançar 170.4 bilhões de dólares em 2022.\"",

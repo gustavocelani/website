@@ -1031,12 +1031,17 @@
                             <div class="border"></div>
                         </div>
 
-                        <!-- Fortinet Map -->
-                        <div id="fortinet-map-request-div" class="text-center">
+                        <!-- Hacking Threat Map -->
+                        <div id="hacking-threat-map-request-div" class="text-center">
                             <h2 id="hacking_map_text" class="color-red">Worldwide Hackers Activity</h2>
-                            <a id="hacking_map_button" onclick="showFortinetMap()" class="btn btn-red"><i class="fa fa-bug"></i> Watch Real Time Hacker Attacks</a>
+                            <a id="hacking_map_button" onclick="showHackingThreatMap()" class="btn btn-red"><i class="fa fa-bug"></i> Watch Real Time Hacker Attacks</a>
                         </div>
-                        <div id="fortinet-map-holder-div"></div>
+                        
+                        <div id="hacking-threat-map-holder-div"></div>
+                        
+                        <div id="hacking-threat-map-hide-div" class="text-center" hidden>
+                            <a id="hacking_map_hide_button" href="javascript:hideHackingThreatMap()"><i class="fa fa-eye-slash"></i> Hide Map</a>
+                        </div>
 
                         <div id="why-carousel" class="wow fadeInUp" data-wow-duration="500ms" data-wow-delay="100ms" style="margin-top: 50px;">
 

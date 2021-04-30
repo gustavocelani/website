@@ -301,18 +301,29 @@ $(window).bind("load", function () {
 
 
 /* ========================================================================= */
-/*	Fortinet Hacker Attack Map
+/*	Hacking Threat Map
+/* 
+/*  - Option 1: https://livethreatmap.radware.com/
+/*  - Option 2: https://threatmap.fortiguard.com/
 /* ========================================================================= */
 
-function showFortinetMap() {
-	$('#fortinet-map-request-div').hide('true');
+function showHackingThreatMap() {
+	$('#hacking-threat-map-request-div').hide();
+	$('#hacking-threat-map-hide-div').show();
 
-	if(!$('#fortinet-map-iframe').length) {
-		$('#fortinet-map-holder-div').html('<iframe src="https://threatmap.fortiguard.com/" style="border: none;" width="100%" height="400px"></iframe>');
+	if(!$('#hacking-threat-map-iframe').length) {
+		$('#hacking-threat-map-holder-div').html('<iframe src="https://livethreatmap.radware.com/" style="border: none;" width="100%" height="400px"></iframe>');
 	}
 }
 
+function hideHackingThreatMap() {
+	$('#hacking-threat-map-request-div').show();
+	$('#hacking-threat-map-hide-div').hide();
 
+	if(!$('#hacking-threat-map-iframe').length) {
+		$('#hacking-threat-map-holder-div').html('');
+	}
+}
 
 /* ========================================================================= */
 /*	Language Controller
@@ -520,6 +531,7 @@ function populateStringsWithLanguageJson(languageJson) {
 	document.getElementById("why_title").innerHTML = languageJson.why_title;
 	document.getElementById("hacking_map_text").innerHTML = languageJson.hacking_map_text;
 	document.getElementById("hacking_map_button").innerHTML = languageJson.hacking_map_button;
+	document.getElementById("hacking_map_hide_button").innerHTML = languageJson.hacking_map_hide_button;
 	document.getElementById("why_1_title").innerHTML = languageJson.why_1_title;
 	document.getElementById("why_1_source").innerHTML = languageJson.why_1_source;
 	document.getElementById("why_2_title").innerHTML = languageJson.why_2_title;
