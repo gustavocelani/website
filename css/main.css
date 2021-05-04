@@ -511,12 +511,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .portfolio-filter ul li a {
-	color: #ddd;
+	/*color: #ddd;*/
 	display: inline-block;
 	font-size: 14px;
 	margin: 0 10px;
 	padding: 5px 15px;
 	position: relative;
+}
+
+.active {
+    color: #61a6ff;
 }
 
 .portfolio-filter ul li a::before {

@@ -3,17 +3,24 @@
 /*	Global Version
 /* ========================================================================= */
 
-var globalVersion = "v0.9";
+var globalVersion = "v0.8";
 
 jQuery(function ($) { "use strict";
 
 	/* ========================================================================= */
-	/*	Page Preloader
+	/*	On Load
 	/* ========================================================================= */
 
 	window.onload = function () {
-		document.getElementById('loading-mask').style.display = 'none';
+
+		// Init Language
 		initLanguage();
+
+		// Init Certifications Category
+		document.getElementById('certificates_filter_main').click();
+		
+		// Hide Loading Mask
+		document.getElementById('loading-mask').style.display = 'none';
 	}
 
 	/* =========================================================================== */
@@ -85,7 +92,6 @@ jQuery(function ($) { "use strict";
 	/* ========================================================================= */
 	/*	Menu item highlighting
 	/* ========================================================================= */
-
 
 	$("#navigation").sticky({
 		topSpacing : 0
@@ -170,10 +176,12 @@ jQuery(function ($) { "use strict";
 	/* ========================================================================= */
 	/*	Certificates Filtering Hook
 	/* =========================================================================  */
-
-	$('#og-grid').mixItUp(); // Certificates filter
-
-	Grid.init(); //Certificates Grid Expand
+	
+	// Certificates filter
+	$('#og-grid').mixItUp();
+	
+	//Certificates Grid Expand
+	Grid.init();
 	
 	
 	/* ========================================================================= */
@@ -203,9 +211,6 @@ jQuery(function ($) { "use strict";
 		pagination : true,
 		transitionStyle : "backSlide"
 	});
-
-
-
 });
 
 
@@ -283,7 +288,6 @@ $(function() {
 /* ========================================================================= */
 /*	Parallax Sections
 /* ========================================================================= */
-
 
 "use strict";
 
@@ -430,11 +434,15 @@ function populateStringsWithLanguageJson(languageJson) {
 
 	// Section: Certificates
 	document.getElementById("certificates_title").innerHTML = languageJson.certificates_title;
+	document.getElementById("certificates_category").innerHTML = languageJson.certificates_category;
 	document.getElementById("certificates_filter_all").innerHTML = languageJson.certificates_filter_all;
+	document.getElementById("certificates_filter_main").innerHTML = languageJson.certificates_filter_main;
 	document.getElementById("certificates_filter_infosec").innerHTML = languageJson.certificates_filter_infosec;
+	document.getElementById("certificates_filter_academic").innerHTML = languageJson.certificates_filter_academic;
 	document.getElementById("certificates_filter_dev").innerHTML = languageJson.certificates_filter_dev;
 	document.getElementById("certificates_filter_linux").innerHTML = languageJson.certificates_filter_linux;
 	document.getElementById("certificates_filter_agile").innerHTML = languageJson.certificates_filter_agile;
+	document.getElementById("certificates_filter_sale").innerHTML = languageJson.certificates_filter_sale;
 	document.getElementById("certificates_1_title").innerHTML = languageJson.certificates_1_title;
 	document.getElementById("certificates_1").setAttribute("data-title", languageJson.certificates_1_title);
 	document.getElementById("certificates_1").setAttribute("data-description", languageJson.certificates_1_inst);
@@ -489,6 +497,72 @@ function populateStringsWithLanguageJson(languageJson) {
 	document.getElementById("certificates_18_title").innerHTML = languageJson.certificates_18_title;
 	document.getElementById("certificates_18").setAttribute("data-title", languageJson.certificates_18_title);
 	document.getElementById("certificates_18").setAttribute("data-description", languageJson.certificates_18_inst);
+	document.getElementById("certificates_19_title").innerHTML = languageJson.certificates_19_title;
+	document.getElementById("certificates_19").setAttribute("data-title", languageJson.certificates_19_title);
+	document.getElementById("certificates_19").setAttribute("data-description", languageJson.certificates_19_inst);
+	document.getElementById("certificates_20_title").innerHTML = languageJson.certificates_20_title;
+	document.getElementById("certificates_20").setAttribute("data-title", languageJson.certificates_20_title);
+	document.getElementById("certificates_20").setAttribute("data-description", languageJson.certificates_20_inst);
+	document.getElementById("certificates_21_title").innerHTML = languageJson.certificates_21_title;
+	document.getElementById("certificates_21").setAttribute("data-title", languageJson.certificates_21_title);
+	document.getElementById("certificates_21").setAttribute("data-description", languageJson.certificates_21_inst);
+	document.getElementById("certificates_22_title").innerHTML = languageJson.certificates_22_title;
+	document.getElementById("certificates_22").setAttribute("data-title", languageJson.certificates_22_title);
+	document.getElementById("certificates_22").setAttribute("data-description", languageJson.certificates_22_inst);
+	document.getElementById("certificates_23_title").innerHTML = languageJson.certificates_23_title;
+	document.getElementById("certificates_23").setAttribute("data-title", languageJson.certificates_23_title);
+	document.getElementById("certificates_23").setAttribute("data-description", languageJson.certificates_23_inst);
+	document.getElementById("certificates_24_title").innerHTML = languageJson.certificates_24_title;
+	document.getElementById("certificates_24").setAttribute("data-title", languageJson.certificates_24_title);
+	document.getElementById("certificates_24").setAttribute("data-description", languageJson.certificates_24_inst);
+	document.getElementById("certificates_25_title").innerHTML = languageJson.certificates_25_title;
+	document.getElementById("certificates_25").setAttribute("data-title", languageJson.certificates_25_title);
+	document.getElementById("certificates_25").setAttribute("data-description", languageJson.certificates_25_inst);
+	document.getElementById("certificates_26_title").innerHTML = languageJson.certificates_26_title;
+	document.getElementById("certificates_26").setAttribute("data-title", languageJson.certificates_26_title);
+	document.getElementById("certificates_26").setAttribute("data-description", languageJson.certificates_26_inst);
+	document.getElementById("certificates_27_title").innerHTML = languageJson.certificates_27_title;
+	document.getElementById("certificates_27").setAttribute("data-title", languageJson.certificates_27_title);
+	document.getElementById("certificates_27").setAttribute("data-description", languageJson.certificates_27_inst);
+	document.getElementById("certificates_28_title").innerHTML = languageJson.certificates_28_title;
+	document.getElementById("certificates_28").setAttribute("data-title", languageJson.certificates_28_title);
+	document.getElementById("certificates_28").setAttribute("data-description", languageJson.certificates_28_inst);
+	document.getElementById("certificates_29_title").innerHTML = languageJson.certificates_29_title;
+	document.getElementById("certificates_29").setAttribute("data-title", languageJson.certificates_29_title);
+	document.getElementById("certificates_29").setAttribute("data-description", languageJson.certificates_29_inst);
+	document.getElementById("certificates_30_title").innerHTML = languageJson.certificates_30_title;
+	document.getElementById("certificates_30").setAttribute("data-title", languageJson.certificates_30_title);
+	document.getElementById("certificates_30").setAttribute("data-description", languageJson.certificates_30_inst);
+	document.getElementById("certificates_31_title").innerHTML = languageJson.certificates_31_title;
+	document.getElementById("certificates_31").setAttribute("data-title", languageJson.certificates_31_title);
+	document.getElementById("certificates_31").setAttribute("data-description", languageJson.certificates_31_inst);
+	document.getElementById("certificates_32_title").innerHTML = languageJson.certificates_32_title;
+	document.getElementById("certificates_32").setAttribute("data-title", languageJson.certificates_32_title);
+	document.getElementById("certificates_32").setAttribute("data-description", languageJson.certificates_32_inst);
+	document.getElementById("certificates_33_title").innerHTML = languageJson.certificates_33_title;
+	document.getElementById("certificates_33").setAttribute("data-title", languageJson.certificates_33_title);
+	document.getElementById("certificates_33").setAttribute("data-description", languageJson.certificates_33_inst);
+	document.getElementById("certificates_34_title").innerHTML = languageJson.certificates_34_title;
+	document.getElementById("certificates_34").setAttribute("data-title", languageJson.certificates_34_title);
+	document.getElementById("certificates_34").setAttribute("data-description", languageJson.certificates_34_inst);
+	document.getElementById("certificates_35_title").innerHTML = languageJson.certificates_35_title;
+	document.getElementById("certificates_35").setAttribute("data-title", languageJson.certificates_35_title);
+	document.getElementById("certificates_35").setAttribute("data-description", languageJson.certificates_35_inst);
+	document.getElementById("certificates_36_title").innerHTML = languageJson.certificates_36_title;
+	document.getElementById("certificates_36").setAttribute("data-title", languageJson.certificates_36_title);
+	document.getElementById("certificates_36").setAttribute("data-description", languageJson.certificates_36_inst);
+	document.getElementById("certificates_37_title").innerHTML = languageJson.certificates_37_title;
+	document.getElementById("certificates_37").setAttribute("data-title", languageJson.certificates_37_title);
+	document.getElementById("certificates_37").setAttribute("data-description", languageJson.certificates_37_inst);
+	document.getElementById("certificates_38_title").innerHTML = languageJson.certificates_38_title;
+	document.getElementById("certificates_38").setAttribute("data-title", languageJson.certificates_38_title);
+	document.getElementById("certificates_38").setAttribute("data-description", languageJson.certificates_38_inst);
+	document.getElementById("certificates_39_title").innerHTML = languageJson.certificates_39_title;
+	document.getElementById("certificates_39").setAttribute("data-title", languageJson.certificates_39_title);
+	document.getElementById("certificates_39").setAttribute("data-description", languageJson.certificates_39_inst);
+	document.getElementById("certificates_40_title").innerHTML = languageJson.certificates_40_title;
+	document.getElementById("certificates_40").setAttribute("data-title", languageJson.certificates_40_title);
+	document.getElementById("certificates_40").setAttribute("data-description", languageJson.certificates_40_inst);
 
 	// Section: Publications
 	document.getElementById("publications_title").innerHTML = languageJson.publications_title;
