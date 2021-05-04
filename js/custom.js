@@ -181,7 +181,7 @@ jQuery(function ($) { "use strict";
 	$('#og-grid').mixItUp();
 	
 	//Certificates Grid Expand
-	Grid.init();
+	//Grid.init();
 	
 	
 	/* ========================================================================= */
