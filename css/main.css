@@ -1006,6 +1006,17 @@ h1, h2, h3, h4, h5, h6 {
     margin: 10px;
 }
 
+.btn-download {
+    width: 150px;
+}
+
+.btn-repository {
+    width: 150px;
+}
+
+.btn-full-magazine {
+    width: 150px;
+}
 
 /*=================================================================
 	Latest Posts
