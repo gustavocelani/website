@@ -26,7 +26,7 @@
     "nav_language_drop_en": "<span class=\"flag-icon flag-icon-us\"></span> English",
     "nav_language_drop_es": "<span class=\"flag-icon flag-icon-es\"></span> Spanish",
 
-    "academic_title": "<span class=\"color\">Academic</span> Formation",
+    "academic_title": "<span class=\"color\">Academic</span> Experience",
     "academic_1_type": "Bachelor",
     "academic_1_title": "Computer Engineering",
     "academic_1_inst": "INATEL<br>National Institute of Telecommunications",
@@ -39,7 +39,7 @@
 
     "skills_title": "Main <span class=\"color\">Skills</span>",
     "skills_infosec": "<i class=\"fa fa-shield\"></i> Information Security",
-    "skills_eh": "<i class=\"fa fa-bug\"></i> Ethical Hacking",
+    "skills_eh": "<i class=\"fa fa-bug\"></i> Hacking",
     "skills_dev": "<i class=\"fa fa-desktop\"></i> Software Development",
     "skills_web": "<i class=\"fa fa-cloud\"></i> WEB",
     "skills_crypto": "<i class=\"fa fa-lock\"></i> Cryptography",
@@ -52,7 +52,7 @@
     "professional_1_inst": "Leucotron<br>Telecommunications",
     "professional_1_date": "2017 - 2018",
     "professional_2_title": "Software Security Engineer",
-    "professional_2_inst": "Samsung Software<br>Development Institute",
+    "professional_2_inst": "Samsung<br>SiDi",
     "professional_2_date": "2018 - 2021",
     "professional_3_title": "Software Security Engineer",
     "professional_3_inst": "Dell<br>Stefanini Group",
@@ -175,7 +175,7 @@
     "publications_7_inst": "INCITEL<br>INATEL's Scientific Initiation Congress",
     "publications_7_info": "<br><i class=\"fa fa-book\"></i> Publication<br><i class=\"fa fa-language\"></i> Portuguese<br><i class=\"fa fa-calendar\"></i> May, 2016",
 
-    "projects_title": "Public <span class=\"color\">Projects</span>",
+    "projects_title": "Open Source <span class=\"color\">Projects</span>",
     "projects_1": "CTF<br>Walkthrough",
     "projects_2": "LaTex<br>Curriculum",
     "projects_3": "OSINT<br>Scripts",
