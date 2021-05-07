@@ -1,3 +1,3 @@
 # Gustavo Celani - Website
 
-[Website](https://gustavocelani.github.io/website/)
+[gustavocelani.github.io/website/](https://gustavocelani.github.io/website/)
