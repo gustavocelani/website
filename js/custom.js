@@ -563,6 +563,9 @@ function populateStringsWithLanguageJson(languageJson) {
 	document.getElementById("certificates_40_title").innerHTML = languageJson.certificates_40_title;
 	document.getElementById("certificates_40").setAttribute("data-title", languageJson.certificates_40_title);
 	document.getElementById("certificates_40").setAttribute("data-description", languageJson.certificates_40_inst);
+	document.getElementById("certificates_41_title").innerHTML = languageJson.certificates_41_title;
+	document.getElementById("certificates_41").setAttribute("data-title", languageJson.certificates_41_title);
+	document.getElementById("certificates_41").setAttribute("data-description", languageJson.certificates_41_inst);
 
 	// Section: Publications
 	document.getElementById("publications_title").innerHTML = languageJson.publications_title;
