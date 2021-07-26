@@ -425,6 +425,9 @@ function populateStringsWithLanguageJson(languageJson) {
 	document.getElementById("professional_3_title").innerHTML = languageJson.professional_3_title;
 	document.getElementById("professional_3_inst").innerHTML = languageJson.professional_3_inst;
 	document.getElementById("professional_3_date").innerHTML = languageJson.professional_3_date;
+	document.getElementById("professional_4_title").innerHTML = languageJson.professional_4_title;
+	document.getElementById("professional_4_inst").innerHTML = languageJson.professional_4_inst;
+	document.getElementById("professional_4_date").innerHTML = languageJson.professional_4_date;
 
 	// Section: Counter
 	document.getElementById("counter_cert").innerHTML = languageJson.counter_cert;
