@@ -3,7 +3,7 @@
 /*	Global Version
 /* ========================================================================= */
 
-var globalVersion = "v0.8";
+var globalVersion = "v0.82";
 
 jQuery(function ($) { "use strict";
 
@@ -569,6 +569,15 @@ function populateStringsWithLanguageJson(languageJson) {
 	document.getElementById("certificates_41_title").innerHTML = languageJson.certificates_41_title;
 	document.getElementById("certificates_41").setAttribute("data-title", languageJson.certificates_41_title);
 	document.getElementById("certificates_41").setAttribute("data-description", languageJson.certificates_41_inst);
+	document.getElementById("certificates_42_title").innerHTML = languageJson.certificates_42_title;
+	document.getElementById("certificates_42").setAttribute("data-title", languageJson.certificates_42_title);
+	document.getElementById("certificates_42").setAttribute("data-description", languageJson.certificates_42_inst);
+	document.getElementById("certificates_43_title").innerHTML = languageJson.certificates_43_title;
+	document.getElementById("certificates_43").setAttribute("data-title", languageJson.certificates_43_title);
+	document.getElementById("certificates_43").setAttribute("data-description", languageJson.certificates_43_inst);
+	document.getElementById("certificates_44_title").innerHTML = languageJson.certificates_44_title;
+	document.getElementById("certificates_44").setAttribute("data-title", languageJson.certificates_44_title);
+	document.getElementById("certificates_44").setAttribute("data-description", languageJson.certificates_44_inst);
 
 	// Section: Publications
 	document.getElementById("publications_title").innerHTML = languageJson.publications_title;
