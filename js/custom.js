@@ -611,10 +611,6 @@ function populateStringsWithLanguageJson(languageJson) {
 	document.getElementById("projects_6").innerHTML = languageJson.projects_6;
 	document.getElementById("projects_7").innerHTML = languageJson.projects_7;
 	document.getElementById("projects_8").innerHTML = languageJson.projects_8;
-	document.getElementById("projects_9").innerHTML = languageJson.projects_9;
-	document.getElementById("projects_10").innerHTML = languageJson.projects_10;
-	document.getElementById("projects_11").innerHTML = languageJson.projects_11;
-	document.getElementById("projects_12").innerHTML = languageJson.projects_12;
 
 	// Section: Why
 	document.getElementById("why_title").innerHTML = languageJson.why_title;
