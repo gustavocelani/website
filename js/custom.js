@@ -3,7 +3,7 @@
 /*	Global Version
 /* ========================================================================= */
 
-var globalVersion = "v0.82";
+var globalVersion = "v0.84";
 
 jQuery(function ($) { "use strict";
 
@@ -337,7 +337,10 @@ var currentLanguage;
 
 function initLanguage() {
 	// Attemtp to use browser language
-	updateLanguage(navigator.language || navigator.userLanguage);
+	// updateLanguage(navigator.language || navigator.userLanguage);
+	
+	// Default Language
+	updateLanguage('en');
 }
 
 function updateLanguage(language) {
